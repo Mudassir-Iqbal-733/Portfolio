@@ -1,0 +1,62 @@
+import React from "react";
+import ems from "../media/EMS-Project.png";
+import todo from "../media/to-do list.png";
+import { Link } from "react-router-dom";
+
+const Projects = () => {
+  const projects = [
+    {
+      img: ems,
+      title: "EMS Project",
+      description: "An Employee Management System built with React and Local Storage.",
+      link: "https://example.com/ems",
+    },
+    {
+      img: todo,
+      title: "To-Do List",
+      description: "A simple and responsive to-do list app with Json Server support.",
+      link: "https://example.com/todo",
+    },
+  ];
+
+  return (
+    <div className="mt-30 px-6 md:px-10">
+      <div className="flex flex-col items-center">
+        <h1 className="text-4xl md:text-5xl font-bold">Projects</h1>
+        <p className="text-xl mt-2 text-center">
+          Here are a few of the projects I've worked on. Each one reflects my
+          focus on user experience, performance, and modern practices.
+        </p>
+        <span className="block w-24 h-0.5 bg-[#19d6e0] mt-5"></span>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        {projects.map((p, index) => (
+          <div
+            key={index}
+            className="max-w-sm bg-gray-900  rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+          >
+            <img
+              src={p.img}
+              alt={p.title}
+              className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+            />
+            <div className="p-5 flex flex-col">
+              <h2 className="text-2xl font-semibold ">{p.title}</h2>
+              <p className=" mt-2 text-sm">{p.description}</p>
+              <Link
+                src={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors duration-300 text-center"
+              >
+                View Project
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Projects;
