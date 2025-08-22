@@ -35,13 +35,13 @@ const Home = () => {
           <Link to="https://facebook.com/maharmudassir.iqbal" target="_blank">
             <Facebook className="text-white hover:text-[#16bbe0] transition" />
           </Link>
-          <Link to="https://linkedin.com" target="_blank">
+          <Link to="https://www.linkedin.com/in/mudassir-iqbal09" target="_blank">
             <Linkedin className="text-white hover:text-[#16bbe0] transition" />
           </Link>
-          <Link to="https://github.com" target="_blank">
+          <Link to="https://github.com/Mudassir-Iqbal-733" target="_blank">
             <Github className="text-white hover:text-[#16bbe0] transition" />
           </Link>
-          <Link to="https://instagram.com" target="_blank">
+          <Link to="https://www.instagram.com/mudassiriqbal232/" target="_blank">
             <Instagram className="text-white hover:text-[#16bbe0] transition" />
           </Link>
         </div>

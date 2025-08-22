@@ -44,10 +44,10 @@ const Contact = () => {
 <div className='flex flex-col mt-10'>
   <h2 className='text-lg font-medium'>Follow Me On</h2>
 <div className='flex pt-5 gap-3'>
-  <Link className='block h-10 w-10 rounded-full bg-gray-600 py-2 px-2 '><Facebook  /></Link>
-  <Link className='block h-10 w-10 rounded-full bg-gray-600 py-2 px-2 '><Instagram  /></Link>
-  <Link className='block h-10 w-10 rounded-full bg-gray-600 py-2 px-2 '><Linkedin  /></Link>
-  <Link className='block h-10 w-10 rounded-full bg-gray-600 py-2 px-2 '><GithubIcon  /></Link>
+  <Link to="https://facebook.com/maharmudassir.iqbal" className='block h-10 w-10 rounded-full bg-gray-600 py-2 px-2 '><Facebook  /></Link>
+  <Link to="https://www.instagram.com/mudassiriqbal232/" className='block h-10 w-10 rounded-full bg-gray-600 py-2 px-2 '><Instagram  /></Link>
+  <Link to="https://www.linkedin.com/in/mudassir-iqbal09" className='block h-10 w-10 rounded-full bg-gray-600 py-2 px-2 '><Linkedin  /></Link>
+  <Link to="https://github.com/Mudassir-Iqbal-733" className='block h-10 w-10 rounded-full bg-gray-600 py-2 px-2 '><GithubIcon  /></Link>
 </div>
 </div>
        </div>
