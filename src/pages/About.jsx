@@ -16,7 +16,7 @@ const About = () => {
             <img
               src={profilePic}
               alt="Mudassir Iqbal"
-              className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-[#289ac7] shadow-md object-cover"
+              className="w-40 h-40 md:w-40 md:h-40 rounded-full border-4 border-[#289ac7] shadow-md object-cover"
             />
           </div>
           <div className="text-center mt-4">
