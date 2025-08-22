@@ -25,7 +25,7 @@ const Home = ({ scrollToSection, refs }) => {
           to stay ahead in the ever-evolving web world.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">
-          <button onClick={() => scrollToSection(refs.projectRef)}  className="font-medium px-8 py-2 rounded-md bg-[#16bbe0] hover:bg-[#1399b8] transition">
+          <button onClick={() => scrollToSection(refs.projectsRef)}  className="font-medium px-8 py-2 rounded-md bg-[#16bbe0] hover:bg-[#1399b8] transition">
             View My Work
           </button>
           <button onClick={() => scrollToSection(refs.contactRef)} className="font-medium px-8 py-2 rounded-md border border-gray-400 hover:bg-gray-800 transition">
