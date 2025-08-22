@@ -3,7 +3,8 @@ import img from "../media/media.jpg";
 import { Facebook, Linkedin, Github, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Home = ({ scrollToSection, refs }) => {
+
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-between mt-20 md:mt-40 px-6 md:px-16 gap-10">
       
@@ -24,10 +25,10 @@ const Home = () => {
           to stay ahead in the ever-evolving web world.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">
-          <button className="font-medium px-8 py-2 rounded-md bg-[#16bbe0] hover:bg-[#1399b8] transition">
+          <button onClick={() => scrollToSection(refs.projectRef)}  className="font-medium px-8 py-2 rounded-md bg-[#16bbe0] hover:bg-[#1399b8] transition">
             View My Work
           </button>
-          <button className="font-medium px-8 py-2 rounded-md border border-gray-400 hover:bg-gray-800 transition">
+          <button onClick={() => scrollToSection(refs.contactRef)} className="font-medium px-8 py-2 rounded-md border border-gray-400 hover:bg-gray-800 transition">
             Get In Touch
           </button>
         </div>

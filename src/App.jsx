@@ -28,9 +28,9 @@ const App = () => {
         refs={{ homeRef, aboutRef, skillsRef, projectsRef, contactRef }}
       />
 
-      <div ref={homeRef}>
-        <Home />
-      </div>
+        <Home scrollToSection={scrollToSection}
+        refs={{homeRef, projectsRef, contactRef }} />
+    
       <div ref={aboutRef}>
         <About />
       </div>

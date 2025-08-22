@@ -14,10 +14,10 @@ const About = () => {
         <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg w-full md:w-1/3 max-w-sm mx-auto">
           <div className="flex justify-center">
             <img
-              src={profilePic}
-              alt="Mudassir Iqbal"
-              className="w-40 h-40 md:w-40 md:h-40 rounded-full border-4 border-[#289ac7] shadow-md object-cover"
-            />
+  src={profilePic}
+  alt="Mudassir Iqbal"
+  className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-[#289ac7] shadow-md object-cover object-top bg-black"
+/>
           </div>
           <div className="text-center mt-4">
             <h2 className="text-lg md:text-xl font-bold">Mudassir Iqbal</h2>

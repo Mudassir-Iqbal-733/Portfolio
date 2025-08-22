@@ -43,14 +43,14 @@ const Projects = () => {
             <div className="p-5 flex flex-col">
               <h2 className="text-2xl font-semibold ">{p.title}</h2>
               <p className=" mt-2 text-sm">{p.description}</p>
-              <Link
+              {/* <Link
                 src={p.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-block px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors duration-300 text-center"
               >
                 View Project
-              </Link>
+              </Link> */}
             </div>
           </div>
         ))}
