@@ -32,7 +32,7 @@ const Home = () => {
           </button>
         </div>
         <div className="flex justify-center md:justify-start gap-6 mt-6">
-          <Link to="https://facebook.com" target="_blank">
+          <Link to="https://facebook.com/maharmudassir.iqbal" target="_blank">
             <Facebook className="text-white hover:text-[#16bbe0] transition" />
           </Link>
           <Link to="https://linkedin.com" target="_blank">
