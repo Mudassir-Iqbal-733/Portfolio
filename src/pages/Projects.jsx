@@ -20,7 +20,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="mt-30 px-6 md:px-10">
+    <div id="projects" className="mt-30 px-6 md:px-10">
       <div className="flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl font-bold">Projects</h1>
         <p className="text-xl mt-2 text-center">
@@ -43,14 +43,6 @@ const Projects = () => {
             <div className="p-5 flex flex-col">
               <h2 className="text-2xl font-semibold ">{p.title}</h2>
               <p className=" mt-2 text-sm">{p.description}</p>
-              {/* <Link
-                src={p.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-block px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors duration-300 text-center"
-              >
-                View Project
-              </Link> */}
             </div>
           </div>
         ))}

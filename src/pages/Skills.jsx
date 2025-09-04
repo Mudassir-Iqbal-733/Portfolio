@@ -13,7 +13,7 @@ const skills = [
 ];
 const Skills = () => {
   return (
-   <div className='mt-40 w-full px-10'>
+   <div id='skills' className='mt-40 w-full px-10'>
             <div className='flex flex-col items-center'>
                 <h1 className='text-5xl font-bold'>Skills</h1>
                 <span className='block w-15 h-0.5 bg-[#19d6e0] mt-5'></span>

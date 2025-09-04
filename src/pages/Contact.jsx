@@ -13,7 +13,7 @@ const contacts = [
 
 const Contact = () => {
   return (
-    <div className="mt-30 px-6 md:px-10">
+    <div id='contact' className="mt-30 px-6 md:px-10">
       <div className="flex flex-col items-center">
         <h1 className="text-4xl text-center md:text-5xl font-bold">Let's Work Together</h1>
         <p className="text-xl mt-2 text-center">

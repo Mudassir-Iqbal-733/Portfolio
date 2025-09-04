@@ -3,7 +3,7 @@ import profilePic from "../media/dp.jpg.jpg";
 
 const About = () => {
   return (
-    <div className="mt-40 w-full px-6 md:px-10">
+    <div id="about" className="mt-40 w-full px-6 md:px-10">
      
       <div className="flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl font-bold">About Me</h1>
