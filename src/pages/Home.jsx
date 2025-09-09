@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../media/dummy.png";
+import img from "../media/media.jpg";
 import { Facebook, Linkedin, Github, Instagram } from "lucide-react";
 import { Link } from "react-scroll";
 
