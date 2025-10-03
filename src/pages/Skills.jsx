@@ -1,6 +1,9 @@
 import React from 'react'
 import { FaJs, FaReact, FaGithub, FaNode, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiTailwindcss, SiVite } from "react-icons/si";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const skills = [
   { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
@@ -11,16 +14,24 @@ const skills = [
   { name: "HTML5", icon: <FaHtml5 className="text-orange-500" /> },
   { name: "CSS3", icon: <FaCss3Alt className="text-blue-500" /> },
 ];
+
 const Skills = () => {
+   useEffect(() => {
+      AOS.init({
+        duration: 1000, // animation duration
+        once: false,    // animation happens every time you scroll
+      });
+    }, []);
   return (
    <div id='skills' className='mt-40 w-full px-10'>
             <div className='flex flex-col items-center'>
-                <h1 className='text-5xl font-bold'>Skills</h1>
+                <h1 className='text-5xl font-bold' data-aos="fade-down">Skills</h1>
                 <span className='block w-15 h-0.5 bg-[#19d6e0] mt-5'></span>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-15">
         {skills.map((skill, index) => (
           <div
+           data-aos="fade-down"
             key={index}
             className="flex items-center gap-2 bg-gray-800/50 rounded-lg px-4 py-2 shadow-md hover:shadow-lg hover:bg-gray-700 transition"
           >
