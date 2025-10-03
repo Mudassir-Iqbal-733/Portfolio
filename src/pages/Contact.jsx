@@ -25,7 +25,7 @@ const Contact = () => {
        <div className=''>
 {
     contacts.map((e,id)=>(
-        <div key={id} className='flex gap-3 md:gap-7 mb-7 bg-gray-900 p-3 rounded-xl hover:bg-gray-700'>
+        <div key={id} className='flex gap-3 md:gap-7 mb-7 bg-gray-800/50 p-3 rounded-xl hover:bg-gray-700'>
            <h2 className='bg-[#289ac7] py-5 px-5 text-xl rounded-full'>{e.icon}</h2>
            <div className='flex flex-col py-1'>
             <h2>{e.name}</h2>
@@ -35,9 +35,9 @@ const Contact = () => {
     ))
 }
        </div>
-       <div className='bg-gray-900 h-[93%] rounded-lg py-15 px-15 hover:bg-gray-700'>
+       <div className='bg-gray-800/50 h-[93%] rounded-lg py-15 px-10 md:px-15 hover:bg-gray-700'>
 <div className='flex gap-5 mb-3'>
-  <span className='block md:w-4 md:h-4 rounded-full  bg-green-500'></span>
+  <span className='hidden md:w-4 md:h-4 rounded-full  bg-green-500'></span>
   <span className='text-xl font-bold'>Available For Freelance</span>
 </div>
 <span>I'm currently available for new projects and collaborations.</span>

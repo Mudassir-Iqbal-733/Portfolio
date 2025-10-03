@@ -4,15 +4,18 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const linkProps = {
-    smooth: true,
-    duration: 800,
-    offset: -80,
-    className: "cursor-pointer text-white hover:text-[#289ac7] font-bold"
-  };
-
+const linkProps = {
+  smooth: true,
+  duration: 800,
+  offset: -80,
+  spy: true, // 👈 important: tracks scroll to apply activeClass
+  className:
+    "cursor-pointer text-white font-bold hover:text-[#289ac7] hover:underline underline-offset-4",
+  activeClass:
+    "text-[#289ac7] underline underline-offset-4", // 👈 active link style
+};
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#3b3939] px-6 py-4 flex items-center justify-between border-y border-[#186d8f] shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-gray-800 px-6 py-4 flex items-center justify-between  shadow-md z-50">
       <h1 className="text-[#289ac7] text-2xl font-bold">Mudassir Iqbal</h1>
 
       <div className="hidden md:flex space-x-6">

@@ -23,14 +23,10 @@ const Home = () => {
         </h1>
 
         <p className="text-base md:text-lg mt-5 text-gray-200 leading-relaxed">
-          I am a passionate frontend developer with a focus on creating clean,
-          responsive, and user-friendly web applications. Skilled in modern
-          technologies like React, Tailwind CSS, and JavaScript, I bring designs
-          to life with precision. I enjoy crafting intuitive interfaces that
-          enhance user experience across all devices. With a strong eye for
-          detail, I combine creativity and code to build impactful digital
-          solutions. Always eager to learn and grow, I keep improving my skills
-          to stay ahead in the ever-evolving web world.
+         I am a MERN Stack Developer with hands-on experience in building high-quality, scalable, and modern web applications. I specialize in developing responsive, and accessible web interfaces and robust backend systems tailored to meet business needs.
+Tech Stack Expertise:
+HTML, CSS, JavaScript, React Js, Tailwind CSS, Node.js, Express.js, MongoDB, Github and Vercel.
+I bring a goal-oriented mindset, a commitment to clean code, and a passion for delivering value-driven solutions. Let’s build something exceptional together
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">

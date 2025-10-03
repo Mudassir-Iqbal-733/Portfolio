@@ -33,7 +33,7 @@ const Projects = () => {
         {projects.map((p, index) => (
           <div
             key={index}
-            className="max-w-sm bg-gray-900  rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+            className="max-w-sm bg-gray-800/50  rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
           >
             <img
               src={p.img}

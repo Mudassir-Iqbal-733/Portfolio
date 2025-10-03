@@ -11,7 +11,7 @@ const About = () => {
       </div>
       <div className="w-full flex flex-col md:flex-row justify-center md:justify-start mt-12 gap-8">
         
-        <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg w-full md:w-1/3 max-w-sm mx-auto">
+        <div className="bg-gray-800/50 text-white p-6 rounded-2xl shadow-lg w-full md:w-1/3 max-w-sm mx-auto">
           <div className="flex justify-center">
             <img
   src={profilePic}
@@ -22,7 +22,7 @@ const About = () => {
           <div className="text-center mt-4">
             <h2 className="text-lg md:text-xl font-bold">Mudassir Iqbal</h2>
             <p className="text-[#289ac7] font-medium text-sm md:text-base">
-              Frontend React Developer
+              MERN Stack Developer
             </p>
           </div>
           <div className="mt-4 space-y-2 text-sm md:text-base">
@@ -38,28 +38,18 @@ const About = () => {
         </div>
         <div className="w-full md:w-2/3 py-5 text-justify text-sm md:text-base leading-relaxed">
           <p>
-            Hi, I’m Mudassir Iqbal, a frontend developer passionate about
-            creating responsive, modern, and user-friendly web applications. My
-            expertise lies in React.js, where I build reusable components and
-            scalable architectures that bring designs to life. I work with
-            JavaScript (ES6+), Tailwind CSS, and Redux, focusing on clean code
-            and smooth performance. I enjoy crafting intuitive user interfaces
-            that look great and work seamlessly across devices. For me, frontend
-            development is not just about code, but about shaping meaningful
-            digital experiences.
-            <br />
-            <br />
-            I pay close attention to detail, optimize for performance, and love
-            the challenge of debugging and problem-solving. Collaboration is an
-            important part of my process, and I enjoy working with designers,
-            backend developers, and clients to build polished projects. Every
-            new project is a chance to combine creativity with technology and
-            deliver something impactful. I keep learning continuously, exploring
-            new React libraries and best practices to improve my craft.
-            <br />
-            <br />My ultimate goal is to create web applications that balance
-            design, functionality, and performance, while growing as a developer
-            who contributes value to both users and the developer community.
+            I am a MERN Stack Developer with hands-on experience in building high-quality, scalable, and modern web applications.
+I specialize in creating responsive and accessible user interfaces that deliver seamless user experiences.
+On the backend, I develop robust systems tailored to meet diverse business needs.
+<br /><br />
+My tech stack expertise includes HTML, CSS, JavaScript, and React.js for dynamic and interactive frontends.
+I work with Tailwind CSS to craft clean, modern, and responsive designs with ease.
+For backend development, I rely on Node.js, Express.js, and MongoDB to build secure and scalable applications.
+<br /><br />
+I am also skilled in GitHub for version control and Vercel for smooth, production-ready deployments.
+I bring a goal-oriented mindset, a focus on clean code practices, and a passion for continuous improvement.
+Collaboration, adaptability, and problem-solving are strengths I consistently bring to my work.
+Above all, I strive to deliver value-driven solutions that transform ideas into exceptional digital products.
           </p>
         </div>
       </div>
