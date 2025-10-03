@@ -16,7 +16,9 @@ const Home = () => {
 
   return (
     <div id="home" className="flex flex-col-reverse md:flex-row items-center justify-between mt-20 md:mt-40 px-6 md:px-16 gap-10">
-      <div className="w-full md:w-1/2 text-center md:text-left "  data-aos="fade-right" md:data-aos="fade-down">
+      <div className="w-full md:w-1/2 text-center md:text-left "  data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
         <h1 data-aos="fade-up" className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-semibold leading-tight">
           Hello, I'm{" "}
           <span className="text-[#186d8f]">Mudassir Iqbal</span>
@@ -82,7 +84,9 @@ I bring a goal-oriented mindset, a commitment to clean code, and a passion for d
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 flex justify-center" data-aos="fade-left">
+      <div className="w-full md:w-1/2 flex justify-center" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
         <img
           src={img}
           alt="Mudassir Iqbal"

@@ -2,6 +2,9 @@ import React from "react";
 import ems from "../media/EMS-Project.png";
 import todo from "../media/to-do list.png";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Projects = () => {
   const projects = [
@@ -19,6 +22,12 @@ const Projects = () => {
     },
   ];
 
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // animation duration
+        once: false,    // animation happens every time you scroll
+      });
+    }, []);
   return (
     <div id="projects" className="mt-30 px-6 md:px-10">
       <div className="flex flex-col items-center">
@@ -27,11 +36,14 @@ const Projects = () => {
           Here are a few of the projects I've worked on. Each one reflects my
           focus on user experience, performance, and modern practices.
         </p>
-        <span className="block w-24 h-0.5 bg-[#19d6e0] mt-5"></span>
+        <span className="block w-24 h-0.5 bg-[#19d6e0] mt-5" ></span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         {projects.map((p, index) => (
           <div
+          data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"
             key={index}
             className="max-w-sm bg-gray-800/50  rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
           >

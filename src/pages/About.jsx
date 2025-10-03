@@ -1,17 +1,26 @@
 import React from "react";
 import profilePic from "../media/dp.jpg.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const About = () => {
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // animation duration
+        once: false,    // animation happens every time you scroll
+      });
+    }, []);
   return (
-    <div id="about" className="mt-40 w-full px-6 md:px-10">
+    <div id="about" className="mt-40 w-full px-6 md:px-10" >
      
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center" >
         <h1 className="text-4xl md:text-5xl font-bold">About Me</h1>
         <span className="block w-24 h-0.5 bg-[#19d6e0] mt-5"></span>
       </div>
-      <div className="w-full flex flex-col md:flex-row justify-center md:justify-start mt-12 gap-8">
+      <div className="w-full flex flex-col md:flex-row justify-center md:justify-start mt-12 gap-8" >
         
-        <div className="bg-gray-800/50 text-white p-6 rounded-2xl shadow-lg w-full md:w-1/3 max-w-sm mx-auto">
+        <div className="bg-gray-800/50 text-white p-6 rounded-2xl shadow-lg w-full md:w-1/3 max-w-sm mx-auto" data-aos="fade-down" data-aos-duration="2000" >
           <div className="flex justify-center">
             <img
   src={profilePic}
@@ -36,7 +45,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="w-full md:w-2/3 py-5 text-justify text-sm md:text-base leading-relaxed">
+        <div className="w-full md:w-2/3 py-5 text-justify text-sm md:text-base leading-relaxed" data-aos="fade-down" data-aos-duration="3000">
           <p>
             I am a MERN Stack Developer with hands-on experience in building high-quality, scalable, and modern web applications.
 I specialize in creating responsive and accessible user interfaces that deliver seamless user experiences.
