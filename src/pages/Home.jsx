@@ -84,7 +84,7 @@ I bring a goal-oriented mindset, a commitment to clean code, and a passion for d
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 flex justify-center transition-all duration-300 hover:translate-x-2 hover:shadow-lg hover:shadow-[#19d6e0]/40" data-aos="flip-left "
+      <div className="w-full md:w-1/2 flex justify-center transition-all duration-300 hover:translate-x-2 hover:shadow-lg hover:shadow-[#19d6e0]/40" data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
         <img
