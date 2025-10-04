@@ -20,7 +20,7 @@ const About = () => {
       </div>
       <div className="w-full flex flex-col md:flex-row justify-center md:justify-start mt-12 gap-8" >
         
-        <div className="bg-gray-800/50 text-white p-6 rounded-2xl shadow-lg w-full md:w-1/3 max-w-sm mx-auto" data-aos="fade-down" data-aos-duration="2000" >
+        <div className=" transition-transform duration-300 hover:translate-x-1 hover:shadow-[#19d6e0]/30  bg-gray-800/50 text-white p-6 rounded-2xl shadow-lg w-full md:w-1/3 max-w-sm mx-auto" data-aos="fade-down" data-aos-duration="2000" >
           <div className="flex justify-center">
             <img
   src={profilePic}

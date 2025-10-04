@@ -41,7 +41,7 @@ const Skills = () => {
             data-aos="fade-down"
             data-aos-duration="1000"
             key={index}
-            className="flex items-center gap-2 bg-gray-800/50 rounded-lg px-4 py-2 shadow-md hover:shadow-lg hover:bg-gray-700 transition"
+            className="transition-transform duration-300 hover:translate-x-1 hover:shadow-[#19d6e0]/30 flex items-center gap-2 bg-gray-800/50 rounded-lg px-4 py-2 shadow-md hover:shadow-lg"
           >
             <span className="text-4xl">{skill.icon}</span>
             <span className="text-white text-sm font-medium">{skill.name}</span>

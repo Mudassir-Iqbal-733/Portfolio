@@ -37,7 +37,7 @@ I bring a goal-oriented mindset, a commitment to clean code, and a passion for d
             smooth={true}
             duration={1000}
             offset={-80}
-            className="cursor-pointer font-medium px-8 py-2 rounded-md bg-[#16bbe0] hover:bg-[#1399b8] transition"
+            className="transition-all duration-300 hover:translate-x-2 hover:shadow-lg hover:shadow-[#19d6e0]/40 cursor-pointer font-medium px-8 py-2 rounded-md bg-[#16bbe0] "
           >
             View My Work
           </Link>
@@ -46,7 +46,7 @@ I bring a goal-oriented mindset, a commitment to clean code, and a passion for d
             to="contact"
             smooth={true}
             duration={1000}
-            className="cursor-pointer font-medium px-8 py-2 rounded-md border border-gray-400 hover:bg-gray-800 transition"
+            className="transition-all duration-300 hover:translate-x-2 hover:shadow-lg hover:shadow-[#19d6e0]/40 cursor-pointer font-medium px-8 py-2 rounded-md border border-gray-400 "
           >
             Get In Touch
           </Link>
@@ -84,7 +84,7 @@ I bring a goal-oriented mindset, a commitment to clean code, and a passion for d
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 flex justify-center" data-aos="flip-left"
+      <div className="w-full md:w-1/2 flex justify-center transition-all duration-300 hover:translate-x-2 hover:shadow-lg hover:shadow-[#19d6e0]/40" data-aos="flip-left "
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
         <img

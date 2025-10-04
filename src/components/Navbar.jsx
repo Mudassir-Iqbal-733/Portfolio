@@ -21,6 +21,7 @@ const linkProps = {
       <div className="hidden md:flex space-x-6">
         <Link to="home" {...linkProps}>Home</Link>
         <Link to="about" {...linkProps}>About</Link>
+        <Link to="education" {...linkProps}>Education</Link>
         <Link to="skills" {...linkProps}>Skills</Link>
         <Link to="projects" {...linkProps}>Projects</Link>
         <Link to="contact" {...linkProps}>Contact</Link>
@@ -41,6 +42,7 @@ const linkProps = {
         <div className="absolute top-16 left-0 w-full bg-gray-800 flex flex-col items-center space-y-4 py-6 md:hidden">
           <Link to="home" {...linkProps} onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="about" {...linkProps} onClick={() => setIsOpen(false)}>About</Link>
+           <Link to="education" {...linkProps} onClick={() => setIsOpen(false)}>Education</Link>
           <Link to="skills" {...linkProps} onClick={() => setIsOpen(false)}>Skills</Link>
           <Link to="projects" {...linkProps} onClick={() => setIsOpen(false)}>Projects</Link>
           <Link to="contact" {...linkProps} onClick={() => setIsOpen(false)}>Contact</Link>

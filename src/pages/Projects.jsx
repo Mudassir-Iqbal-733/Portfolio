@@ -45,7 +45,7 @@ const Projects = () => {
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000"
             key={index}
-            className="max-w-sm bg-gray-800/50  rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+            className="transition-transform duration-300 hover:translate-x-1 hover:shadow-[#19d6e0]/30 max-w-sm bg-gray-800/50  rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl "
           >
             <img
               src={p.img}
