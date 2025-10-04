@@ -1,60 +1,136 @@
-import React from "react";
-import ems from "../media/EMS-Project.png";
-import todo from "../media/to-do list.png";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+
+import ems from "../media/EMS-Project.png";
+import todo from "../media/to-do list.png";
+import portfolio from "../media/Portfolio.png";
 
 const Projects = () => {
   const projects = [
     {
+      img: portfolio,
+      title: "Portfolio Website",
+      description:
+        "My personal portfolio built using React, Tailwind, and AOS animations.",
+      tech: ["React", "Tailwind", "AOS"],
+      github: "https://github.com/Mudassir-Iqbal-733/Portfolio.git",
+      live: "https://portfolio-mocha-one-93.vercel.app/",
+    },
+    {
       img: ems,
-      title: "EMS Project",
-      description: "An Employee Management System built with React and Local Storage.",
-      link: "https://example.com/ems",
+      title: "Employee Management System",
+      description:
+        "A web app to manage employee records using React, Context API, and Local Storage.",
+      tech: ["React", "Tailwind", "LocalStorage"],
+      github: "https://github.com/Mudassir-Iqbal-733/EMS.git",
+      live: "",
     },
     {
       img: todo,
       title: "To-Do List",
-      description: "A simple and responsive to-do list app with Json Server support.",
-      link: "https://example.com/todo",
+      description:
+        "A clean and responsive to-do app built with React and JSON Server for persistent data.",
+      tech: ["React", "Tailwind", "JSON Server"],
+      github: "",
+      live: "",
     },
   ];
 
-    useEffect(() => {
-      AOS.init({
-        duration: 1000, // animation duration
-        once: false,    // animation happens every time you scroll
-      });
-    }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
+
   return (
-    <div id="projects" className="mt-30 px-6 md:px-10">
-      <div className="flex flex-col items-center">
-        <h1 className="text-4xl md:text-5xl font-bold">Projects</h1>
-        <p className="text-xl mt-2 text-center">
-          Here are a few of the projects I've worked on. Each one reflects my
-          focus on user experience, performance, and modern practices.
+    <div id="projects" className="mt-20 px-6 md:px-12 lg:px-20">
+      {/* Section Heading */}
+      <div className="flex flex-col items-center text-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#19d6e0]">
+          Projects
+        </h1>
+        <p className="text-lg mt-2 max-w-2xl text-gray-300">
+          Here are a few of the projects I've built — combining functionality,
+          performance, and clean design.
         </p>
-        <span className="block w-24 h-0.5 bg-[#19d6e0] mt-5" ></span>
+        <span className="block w-24 h-0.5 bg-[#19d6e0] mt-5"></span>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
         {projects.map((p, index) => (
           <div
-          data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"
             key={index}
-            className="transition-transform duration-300 hover:translate-x-1 hover:shadow-[#19d6e0]/30 max-w-sm bg-gray-800/50  rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl "
+            data-aos="flip-right"
+            data-aos-duration="2000"
+            className="bg-gray-900 rounded-2xl shadow-lg flex flex-col justify-between overflow-hidden
+                       hover:shadow-[#19d6e0]/40 hover:shadow-2xl transition-all duration-500"
           >
-            <img
-              src={p.img}
-              alt={p.title}
-              className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-            />
-            <div className="p-5 flex flex-col">
-              <h2 className="text-2xl font-semibold ">{p.title}</h2>
-              <p className=" mt-2 text-sm">{p.description}</p>
+            {/* Project Image */}
+            <div className="overflow-hidden">
+              <img
+                src={p.img}
+                alt={p.title}
+                className="w-full h-48 object-fill transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+
+            {/* Project Info */}
+            <div className="flex flex-col justify-between flex-grow p-6">
+              <div>
+                <h2 className="text-xl font-semibold mb-2 text-white">
+                  {p.title}
+                </h2>
+                <p className="text-gray-300 text-sm mb-4">{p.description}</p>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {p.tech.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="bg-[#19d6e0]/20 text-[#19d6e0] text-xs font-medium px-3 py-1 rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Buttons (Only show if links exist) */}
+              <div className="flex gap-4 mt-auto">
+                {p.github && (
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 px-4 py-2 w-1/2 text-sm font-medium 
+                               bg-[#19d6e0]/20 text-[#19d6e0]
+                               hover:bg-[#19d6e0] hover:text-black 
+                               rounded-lg border border-[#19d6e0] 
+                               transition-all duration-300"
+                  >
+                    <FaGithub className="text-lg" /> Source Code
+                  </a>
+                )}
+
+                {p.live && (
+                  <a
+                    href={p.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 px-4 py-2 w-1/2 text-sm font-medium 
+                               bg-[#19d6e0]/20 text-[#19d6e0]
+                               hover:bg-[#19d6e0] hover:text-black 
+                               rounded-lg border border-[#19d6e0] 
+                               transition-all duration-300"
+                  >
+                    <FaExternalLinkAlt className="text-sm" /> Live
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}
