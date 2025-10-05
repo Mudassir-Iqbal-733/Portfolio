@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import blog from "../media/blog.png";
 import ems from "../media/EMS-Project.png";
 import todo from "../media/to-do list.png";
 import portfolio from "../media/Portfolio.png";
@@ -17,6 +17,14 @@ const Projects = () => {
       tech: ["React", "Tailwind", "AOS"],
       github: "https://github.com/Mudassir-Iqbal-733/Portfolio.git",
       live: "https://portfolio-mocha-one-93.vercel.app/",
+    },
+    {
+      img: blog,
+      title: "Blog Website",
+      description: "My Blog Website built using MERN Stack.",
+      tech: ["React", "Tailwind", "Node.js", "Express.js", "MongoDB"],
+      github: "https://github.com/Mudassir-Iqbal-733/Blog.git",
+      live: "",
     },
     {
       img: ems,
@@ -60,21 +68,24 @@ const Projects = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 
+                   place-items-stretch"
+      >
         {projects.map((p, index) => (
           <div
             key={index}
-            data-aos="flip-right"
-            data-aos-duration="2000"
-            className="bg-gray-900 rounded-2xl shadow-lg flex flex-col justify-between overflow-hidden
-                       hover:shadow-[#19d6e0]/40 hover:shadow-2xl transition-all duration-500"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            className="bg-gray-900 rounded-2xl shadow-lg flex flex-col overflow-hidden 
+                       hover:shadow-[#19d6e0]/40 hover:shadow-2xl transition-all duration-500 "
           >
             {/* Project Image */}
             <div className="overflow-hidden">
               <img
                 src={p.img}
                 alt={p.title}
-                className="w-full h-48 object-fill transition-transform duration-500 hover:scale-105"
+                className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
 
@@ -99,20 +110,20 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Buttons (Only show if links exist) */}
-              <div className="flex gap-4 mt-auto">
+              {/* Buttons (conditionally shown) */}
+              <div className="flex gap-3 mt-auto">
                 {p.github && (
                   <a
                     href={p.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 px-4 py-2 w-1/2 text-sm font-medium 
+                    className="flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium 
                                bg-[#19d6e0]/20 text-[#19d6e0]
                                hover:bg-[#19d6e0] hover:text-black 
                                rounded-lg border border-[#19d6e0] 
-                               transition-all duration-300"
+                               transition-all duration-300 w-1/2 text-center"
                   >
-                    <FaGithub className="text-lg" /> Source Code
+                    <FaGithub className="text-lg" /> Code
                   </a>
                 )}
 
@@ -121,11 +132,11 @@ const Projects = () => {
                     href={p.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 px-4 py-2 w-1/2 text-sm font-medium 
+                    className="flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium 
                                bg-[#19d6e0]/20 text-[#19d6e0]
                                hover:bg-[#19d6e0] hover:text-black 
                                rounded-lg border border-[#19d6e0] 
-                               transition-all duration-300"
+                               transition-all duration-300 w-1/2 text-center"
                   >
                     <FaExternalLinkAlt className="text-sm" /> Live
                   </a>

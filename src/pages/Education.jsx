@@ -32,7 +32,7 @@ const Education = () => {
     <section id="education" className=" mt-40 text-white px-4 sm:px-6 py-10 rounded-xl max-w-4xl mx-auto shadow-lg">
       {/* Section Title */}
       <div className="flex flex-col items-center mb-12">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-center">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-[#19d6e0]">
           Education & Courses
         </h1>
         <span className="block w-20 h-1 bg-[#19d6e0] mt-3 rounded-full"></span>

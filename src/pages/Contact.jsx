@@ -25,7 +25,7 @@ const Contact = () => {
     <div id='contact' className="mt-30 px-6 md:px-10">
       {/* Heading */}
       <div className="flex flex-col items-center">
-        <h1 className="text-4xl text-center md:text-5xl font-bold">Let's Work Together</h1>
+        <h1 className="text-4xl text-center md:text-5xl font-bold text-[#19d6e0]">Let's Work Together</h1>
         <p className="text-xl mt-2 text-center">
           Let's build something amazing together. Whether you're looking for a developer, collaborator, or just want to chat tech — I'm just a message away.
         </p>

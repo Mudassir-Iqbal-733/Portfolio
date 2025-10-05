@@ -21,7 +21,7 @@ const Home = () => {
      data-aos-duration="2000">
         <h1 data-aos="fade-up" className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-semibold leading-tight">
           Hello, I'm{" "}
-          <span className="text-[#186d8f]">Mudassir Iqbal</span>
+          <span className="text-[#19d6e0]">Mudassir Iqbal</span>
         </h1>
 
         <p className="text-base md:text-lg mt-5 text-gray-200 leading-relaxed">

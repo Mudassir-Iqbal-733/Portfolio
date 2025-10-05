@@ -10,13 +10,13 @@ const linkProps = {
   offset: -80,
   spy: true, // 👈 important: tracks scroll to apply activeClass
   className:
-    "cursor-pointer text-white font-bold hover:text-[#289ac7] hover:underline underline-offset-4",
+    "cursor-pointer text-white font-bold hover:text-[#19d6e0] hover:underline underline-offset-8",
   activeClass:
-    "text-[#289ac7] underline underline-offset-4", // 👈 active link style
+    "text-[#19d6e0] underline underline-offset-8", // 👈 active link style
 };
   return (
     <nav className="fixed top-0 left-0 w-full bg-gray-800 px-6 py-4 flex items-center justify-between  shadow-md z-50">
-      <h1 className="text-[#289ac7] text-2xl font-bold">Mudassir Iqbal</h1>
+      <h1 className="text-[#19d6e0] text-2xl font-bold">Mudassir Iqbal</h1>
 
       <div className="hidden md:flex space-x-6">
         <Link to="home" {...linkProps}>Home</Link>
