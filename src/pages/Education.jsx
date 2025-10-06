@@ -1,4 +1,7 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const education = [
   {
@@ -28,6 +31,12 @@ const education = [
 ];
 
 const Education = () => {
+  useEffect(() => {
+      AOS.init({
+        duration: 1000, // animation duration
+        once: false,    // animation happens every time you scroll
+      });
+    }, []);
   return (
     <section id="education" className=" mt-40 text-white px-4 sm:px-6 py-10 rounded-xl max-w-4xl mx-auto shadow-lg">
       {/* Section Title */}
@@ -43,6 +52,7 @@ const Education = () => {
         {education.map((item, idx) => (
           <div
             key={idx}
+             data-aos="flip-up"
             className="mb-10 ml-6 sm:ml-10 relative group transition-transform duration-300 hover:translate-x-1"
           >
             {/* Timeline Dot */}

@@ -46,9 +46,9 @@ I bring a goal-oriented mindset, a commitment to clean code, and a passion for d
             href="https://drive.google.com/file/d/1Fmy3Jezi0V9jwH5fUTD-7lM6Yzqe5-QY/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-all duration-300 hover:translate-x-2 hover:shadow-lg hover:shadow-[#19d6e0]/40 cursor-pointer font-medium px-8 py-2 rounded-md bg-[#16bbe0] text-black"
+            className="transition-all duration-300 hover:translate-x-2 hover:shadow-lg hover:shadow-[#19d6e0]/40 cursor-pointer font-medium px-8 py-2 rounded-md bg-[#16bbe0] text-white"
           >
-            View CV
+           Download CV
           </a>
         </div>
 

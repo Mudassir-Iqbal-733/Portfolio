@@ -6,6 +6,7 @@ import blog from "../media/blog.png";
 import ems from "../media/EMS-Project.png";
 import todo from "../media/to-do list.png";
 import portfolio from "../media/Portfolio.png";
+import ecommerce from "../media/ecommerce-project.png";
 
 const Projects = () => {
   const projects = [
@@ -24,6 +25,15 @@ const Projects = () => {
       description: "My Blog Website built using MERN Stack.",
       tech: ["React", "Tailwind", "Node.js", "Express.js", "MongoDB"],
       github: "https://github.com/Mudassir-Iqbal-733/Blog.git",
+      live: "",
+    },
+     {
+      img: ecommerce,
+      title: "E-Commerce Website",
+      description:
+        "A web app for buying and selling mobiles built using MERN Stack.Link Available Soon.",
+      tech: ["React", "Tailwind", "Node Js","Express Js","MongoDB"],
+      github: "",
       live: "",
     },
     {
@@ -78,7 +88,7 @@ const Projects = () => {
             data-aos="zoom-in"
             data-aos-duration="1500"
             className="bg-gray-900 rounded-2xl shadow-lg flex flex-col overflow-hidden 
-                       hover:shadow-[#19d6e0]/40 hover:shadow-2xl transition-all duration-500 "
+                       hover:shadow-[#19d6e0]/40 hover:shadow-2xl transition-all duration-500 hover:translate-x-1"
           >
             {/* Project Image */}
             <div className="overflow-hidden">
