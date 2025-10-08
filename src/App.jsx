@@ -12,6 +12,7 @@ import {
   buildStyles,
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import LoadingBar from "react-top-loading-bar";
 
 const App = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -33,6 +34,13 @@ const App = () => {
 
   return (
     <>
+      <LoadingBar
+        color="#19d6e0"  
+        progress={100}   
+        height={3}      
+        waitingTime={500}
+        onLoaderFinished={() => {}}
+      />
       <Navbar />
       <Home />
       <About />
@@ -42,7 +50,7 @@ const App = () => {
       <Contact />
       <Footer />
 
-      {/* ✅ Scroll progress bar (fixed bottom-right corner) */}
+      
       <div
         className="fixed bottom-6 right-6 z-50"
         style={{ width: 70, height: 70 }}
