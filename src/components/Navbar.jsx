@@ -48,6 +48,7 @@ const linkProps = {
           <Link to="contact" {...linkProps} onClick={() => setIsOpen(false)}>Contact</Link>
         </div>
       )}
+      
     </nav>
   );
 };
