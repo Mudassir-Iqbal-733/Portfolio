@@ -12,35 +12,31 @@ import {
   buildStyles,
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import LoadingBar from "react-top-loading-bar";
 
 const App = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
 
-  // 🧠 Update scroll progress based on scroll position
   useEffect(() => {
     const handleScroll = () => {
-      const totalHeight =
+      const scrollTop =
+        window.scrollY || document.documentElement.scrollTop;
+      const scrollHeight =
         document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-      const scrollTop = window.scrollY;
-      const progress = (scrollTop / totalHeight) * 100;
-      setScrollProgress(progress);
+        window.innerHeight;
+      const progress = (scrollTop / scrollHeight) * 100;
+
+      
+      setScrollProgress(Math.min(Math.max(progress, 0), 100));
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll(); // set initial value
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
-      <LoadingBar
-        color="#19d6e0"  
-        progress={100}   
-        height={3}      
-        waitingTime={500}
-        onLoaderFinished={() => {}}
-      />
       <Navbar />
       <Home />
       <About />
